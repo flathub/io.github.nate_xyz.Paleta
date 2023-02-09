@@ -31,7 +31,7 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/nate-xyz/paleta",
-                    "commit":"14ab9d1ae274de3c962bfeadd82482effb0b902a"
+                    "commit":"0a06e1ade183ddbf8418e3d0381bd0ffa23c98ba"
                 }
             ]
         }
