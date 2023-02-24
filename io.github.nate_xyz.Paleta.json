@@ -3,6 +3,9 @@
     "runtime" : "org.gnome.Platform",
     "runtime-version" : "43",
     "sdk" : "org.gnome.Sdk",
+    "sdk-extensions" : [
+        "org.freedesktop.Sdk.Extension.rust-stable"
+    ],
     "command" : "paleta",
     "finish-args" : [
         "--share=ipc",
@@ -10,6 +13,9 @@
         "--device=dri",
         "--socket=wayland"
     ],
+    "build-options" : {
+        "append-path" : "/usr/lib/sdk/rust-stable/bin"
+    },
     "cleanup" : [
         "/include",
         "/lib/pkgconfig",
@@ -22,7 +28,6 @@
         "*.a"
     ],
     "modules" : [
-        "pypi-dependencies.json",
         {
             "name" : "paleta",
             "buildsystem" : "meson",
@@ -30,7 +35,15 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/nate-xyz/paleta",
-                    "commit":"cef94f4f54fd19652c727749d0fd8b3b0e88f055"
+                    "commit":"85d754ed5d1e0e8e40dcd19c1914f638f45dbf0d"
+                },
+                "cargo-sources.json",
+                {
+                    "type" : "shell",
+                    "commands" : [
+                        "mkdir .cargo",
+                        "cp cargo/config .cargo/"
+                    ]
                 }
             ]
         }
