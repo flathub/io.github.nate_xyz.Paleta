@@ -35,7 +35,7 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/nate-xyz/paleta",
-                    "commit":"85d754ed5d1e0e8e40dcd19c1914f638f45dbf0d"
+                    "commit":"d779d2a0393d790586c3f73fb230d029ae406391"
                 },
                 "cargo-sources.json",
                 {
