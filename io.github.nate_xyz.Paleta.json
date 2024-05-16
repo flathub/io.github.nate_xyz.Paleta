@@ -1,7 +1,7 @@
 {
     "app-id" : "io.github.nate_xyz.Paleta",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "43",
+    "runtime-version" : "46",
     "sdk" : "org.gnome.Sdk",
     "sdk-extensions" : [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -36,6 +36,10 @@
                     "type" : "git",
                     "url" : "https://github.com/nate-xyz/paleta",
                     "commit":"d779d2a0393d790586c3f73fb230d029ae406391"
+                },
+                {
+                    "type" : "patch",
+                    "path" : "fix_appdata.patch"
                 },
                 "cargo-sources.json",
                 {
