@@ -1,7 +1,15 @@
 diff --git a/data/io.github.nate_xyz.Paleta.appdata.xml.in b/data/io.github.nate_xyz.Paleta.appdata.xml.in
-index 7419be3..898d48f 100644
+index 7419be3..76be5a4 100644
 --- a/data/io.github.nate_xyz.Paleta.appdata.xml.in
 +++ b/data/io.github.nate_xyz.Paleta.appdata.xml.in
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <component type="desktop">
+-  <id>io.github.nate_xyz.Paleta.desktop</id>
++  <id>io.github.nate_xyz.Paleta</id>
+   <metadata_license>CC0-1.0</metadata_license>
+   <project_license>GPL-3.0-or-later</project_license>
+   <name>Paleta</name>
 @@ -25,6 +25,8 @@
    <url type="homepage">https://github.com/nate-xyz/paleta</url>
    <url type="bugtracker">https://github.com/nate-xyz/paleta/issues</url>
@@ -39,5 +47,3 @@ index f702b80..5e8ee75 100644
  StartupNotify=true
  # Translators: Search terms to find this application. Do not translate or localize the semicolons! The list must also end with a semicolon.
  Keywords=color;palette;
---
-libgit2 1.7.2
