@@ -1,25 +1,46 @@
+From 9fa7247189c427faf32e173b7c12a2555b592b2a Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Sat, 21 Mar 2026 01:49:19 +0300
+Subject: [PATCH] Fix appdata paper cuts
+
+---
+ data/io.github.nate_xyz.Paleta.appdata.xml.in | 17 ++++++++---------
+ data/io.github.nate_xyz.Paleta.desktop.in     |  2 +-
+ 2 files changed, 9 insertions(+), 10 deletions(-)
+
 diff --git a/data/io.github.nate_xyz.Paleta.appdata.xml.in b/data/io.github.nate_xyz.Paleta.appdata.xml.in
-index 7419be3..76be5a4 100644
+index 7419be3..d68bc96 100644
 --- a/data/io.github.nate_xyz.Paleta.appdata.xml.in
 +++ b/data/io.github.nate_xyz.Paleta.appdata.xml.in
-@@ -1,6 +1,6 @@
+@@ -1,13 +1,16 @@
  <?xml version="1.0" encoding="UTF-8"?>
- <component type="desktop">
--  <id>io.github.nate_xyz.Paleta.desktop</id>
-+  <id>io.github.nate_xyz.Paleta</id>
+-<component type="desktop">
++<component type="desktop-application">
+   <id>io.github.nate_xyz.Paleta.desktop</id>
    <metadata_license>CC0-1.0</metadata_license>
    <project_license>GPL-3.0-or-later</project_license>
    <name>Paleta</name>
-@@ -25,6 +25,8 @@
+   <summary>Generate color palettes with ease</summary>
+-  <developer_name>nate-xyz</developer_name>
++  <developer id="io.github.nate_xyz">
++    <name>nate-xyz</name>
++  </developer>
+   <description>
+-    <p>Find the dominant color palette from any image and manage palettes with Paleta. An intuitive tool for designers, artists, or anyone looking to streamline their color work.</p>
++    <p>Find the dominant color palette from any image and manage palettes with Paleta.
++      An intuitive tool for designers, artists, or anyone looking to streamline their color work.</p>
+     <p>Features:</p>
+     <ul>
+       <li>Drag and drop images to load</li>
+@@ -24,6 +27,7 @@
+ 
    <url type="homepage">https://github.com/nate-xyz/paleta</url>
    <url type="bugtracker">https://github.com/nate-xyz/paleta/issues</url>
-   <url type="donation">https://ko-fi.com/natexyz</url>
 +  <url type="vcs-browser">https://github.com/nate-xyz/paleta</url>
-+  <url type="translate">https://github.com/nate-xyz/paleta/tree/main/po</url>
+   <url type="donation">https://ko-fi.com/natexyz</url>
  
    <releases>
-     <release version="0.3.1" date="2023-02-27">
-@@ -83,13 +85,8 @@
+@@ -83,13 +87,8 @@
    </custom>
    <content_rating type="oars-1.1"/>
  
@@ -35,7 +56,7 @@ index 7419be3..76be5a4 100644
      </screenshot>
      <screenshot>
 diff --git a/data/io.github.nate_xyz.Paleta.desktop.in b/data/io.github.nate_xyz.Paleta.desktop.in
-index f702b80..5e8ee75 100644
+index f702b80..aeaf608 100644
 --- a/data/io.github.nate_xyz.Paleta.desktop.in
 +++ b/data/io.github.nate_xyz.Paleta.desktop.in
 @@ -6,7 +6,7 @@ Exec=paleta
@@ -43,7 +64,10 @@ index f702b80..5e8ee75 100644
  Terminal=false
  Type=Application
 -Categories=GNOME;GTK;Graphics
-+Categories=Graphics;ImageProcessing;
++Categories=GNOME;GTK;Graphics;ImageProcessing
  StartupNotify=true
  # Translators: Search terms to find this application. Do not translate or localize the semicolons! The list must also end with a semicolon.
  Keywords=color;palette;
+--
+libgit2 1.7.2
+
