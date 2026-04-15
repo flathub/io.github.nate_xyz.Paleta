@@ -1,12 +1,13 @@
 {
     "app-id" : "io.github.nate_xyz.Paleta",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "48",
+    "runtime-version" : "50",
     "sdk" : "org.gnome.Sdk",
     "sdk-extensions" : [
         "org.freedesktop.Sdk.Extension.rust-stable"
     ],
     "command" : "paleta",
+    "rename-appdata-file" : "io.github.nate_xyz.Paleta.appdata.xml",
     "finish-args" : [
         "--share=ipc",
         "--socket=fallback-x11",
@@ -16,17 +17,6 @@
     "build-options" : {
         "append-path" : "/usr/lib/sdk/rust-stable/bin"
     },
-    "cleanup" : [
-        "/include",
-        "/lib/pkgconfig",
-        "/man",
-        "/share/doc",
-        "/share/gtk-doc",
-        "/share/man",
-        "/share/pkgconfig",
-        "*.la",
-        "*.a"
-    ],
     "modules" : [
         {
             "name" : "paleta",
